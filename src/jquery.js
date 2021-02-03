@@ -20,7 +20,4 @@ window.jQuery = function (selectorOrArray) {
                 array = array.concat(elements2)
             }
             //array.oldApi = this
-            return jQuery(array)
-        }
-    }
-}
+            return jQuery(array
