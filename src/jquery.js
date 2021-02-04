@@ -19,5 +19,20 @@ window.jQuery = function (selectorOrArray) {
                 const elements2 = Array.from(elements[i].querySelectorAll(selector))
                 array = array.concat(elements2)
             }
-            //array.oldApi = this
-            return jQuery(array
+
+            find(selector) {
+                let array = []
+                for (let i = 0; i < elements.length; i++) {
+                    const elements2 = Array.from(elements[i].querySelectorAll(selector))
+                    array = array.concat(elements2)
+                } find(selector) {
+                    let array = []
+                    for (let i = 0; i < elements.length; i++) {
+                        const elements2 = Array.from(elements[i].querySelectorAll(selector))
+                        array = array.concat(elements2)
+                    } find(selector) {
+                        let array = []
+                        for (let i = 0; i < elements.length; i++) {
+                            const elements2 = Array.from(elements[i].querySelectorAll(selector))
+                            array = array.concat(elements2)
+                        }
