@@ -1,4 +1,23 @@
-window.$ = window.jQuery
-
-$('#test').find('.child').addClass('red')
-// console.log($('#test').find('.child').addClass('red'))
+window.dom = {
+    create(string) {
+        const container = document.createElement("template");
+        //trim  去掉两边（td）的空格（文本）
+        container.innerHTML = string.trim();
+        //这样才能返回第一个孩子
+        return container.content.firstChild;
+    },
+    //新增弟弟       
+    //在什么节点上新增     新增的节点
+    after(node, node2) {
+        //找到父节点  调用父节点的insertBefore  
+        node.parentNode.insertBefore(node2, node.nextSibling);
+    },
+    //新增哥哥
+    before(node, node2) {
+        node.parentNode.insertBefore(node2, node);
+    },
+    //新增儿子
+    append(parent, node) {
+        parent.appendChild(node)
+    },
+};

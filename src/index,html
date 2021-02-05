@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>手写 JQuery</title>
+    <title>DOM 1</title>
 </head>
 
 <body>
-    <div id="test">
-        <div class="child">1</div>
-        <div class="child">2</div>
-        <div class="child">3</div>
+    示例
+    <div id="test">test</div>
+
+    <div id="empty">
+        <div id="e1"></div>
+        <div id="e2"></div>
+        <div id="e3"></div>
     </div>
 
-    <script src="jquery.js"></script>
+    <script src="dom.js"></script>
     <script src="main.js"></script>
 </body>
 
