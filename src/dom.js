@@ -75,5 +75,24 @@ window.dom = {
             return node.innerHTML
         }
     },
+    html(node, string) {
+        if (arguments.length === 2) {
+            node.innerHTML = string
+        } else if (arguments.length === 1) {
+            return node.innerHTML
+        }
+    }, html(node, string) {
+        if (arguments.length === 2) {
+            node.innerHTML = string
+        } else if (arguments.length === 1) {
+            return node.innerHTML
+        }
+    }, html(node, string) {
+        if (arguments.length === 2) {
+            node.innerHTML = string
+        } else if (arguments.length === 1) {
+            return node.innerHTML
+        }
+    }
 
 };
